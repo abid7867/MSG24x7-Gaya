@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Navigation */
+/* Header */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Top Navigation */
+.top-nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background-color: #444;
+}
+
+.top-nav .btn {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #ff6600;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.top-nav .btn:hover {
+    background-color: #ff6600;
+    color: #fff;
+}
+
+/* Main Navigation */
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+.logo {
+    font-size: 1.8em;
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-nav nav {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #ff6600;
+}
+
+.btn-contact {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-contact:hover {
+    background-color: #cc5200;
+}
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: left;
+    height: 100vh;
+    /* color: #000000; */
+    padding: 20px;
+    margin-top: 60px; 
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff6600;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #cc5200;
+}
+
+.offer-expiring {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-top: 1em;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+
+.service {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+    max-width: 45%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.service-image {
+    flex: 1;
+}
+
+.service-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.service-content {
+    flex: 2;
+    padding: 20px;
+}
+
+.service h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+.service p {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.service .cta-button {
+    margin-bottom: 0;
+}
+
+.service .offer-expiring {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* WhatsApp Business API Section */
+.whatsapp-api {
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+.whatsapp-api h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1em;
+}
+
+/* Call to Action Section */
+.call-to-action {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ff6600;
+    color: #ffffff;
+}
+
+.call-to-action h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.call-to-action .cta-button {
+    background-color: #ffffff;
+    color: #ff6600;
+}
+
+.call-to-action .cta-button:hover {
+    background-color: #e6e6e6;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    max-width: 300px;
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #ccc;
+}
